@@ -1,0 +1,11 @@
+.box {
+  width: 100%;
+  max-width: 400px; /* Limits maximum width on desktop */
+  height: auto;
+  display: flex;
+  margin: 10px auto;
+}
+
+.pic2 {
+  bor
+}

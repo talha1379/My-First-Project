@@ -1,0 +1,65 @@
+body {
+  background-color: rgb(47, 107, 109);
+  color: white;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 5%;
+  padding: 20px;
+  align-items: flex-start;
+}
+.container h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.watch-card {
+  /* display: flex; */
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.3s;
+}
+
+.watch-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.watch-card h2 {
+  margin: 10px 0 5px 0;
+  font-size: 1.2em;
+}
+
+.watch-card p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 1em;
+}
+
+.watch-card button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.watch-card button:hover {
+  background-color: #555;
+}

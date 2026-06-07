@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors Example</title>
+    <!-- Internal CSS starts here -->
+    <style>
+      /* 1. Universal Selector: styles all elements */
+      * {
+        font-family: Arial, sans-serif;
+      }
+
+      /* 2. Element Selector: styles all <p> elements */
+      p {
+        color: blue;
+        font-size: 16px;
+      }
+
+      /* 3. Class Selector: styles elements with class="highlight" */
+      .highlight {
+        background-color: yellow;
+        font-weight: bold;
+      }
+
+      /* 4. ID Selector: styles the single element with id="main-title" */
+      #main-title {
+        color: red;
+        text-align: center;
+      }
+
+      /* 5. Group Selector: styles all <h1> and <h2> elements */
+      h1,
+      h2 {
+        border-bottom: 2px solid gray;
+        padding-bottom: 5px;
+      }
+
+      /* 6. Descendant Selector: styles <span> only inside elements with class="highlight" */
+      .highlight span {
+        text-decoration: underline;
+        color: purple;
+      }
+
+      /* 7. Attribute Selector: styles elements with a 'data-type' attribute */
+      [data-type] {
+        font-style: italic;
+      }
+    </style>
+    <!-- Internal CSS ends here -->
+  </head>
+  <body>
+    <h1 id="main-title">Understanding CSS Selectors</h1>
+
+    <p>This is a standard paragraph styled with the element selector.</p>
+
+    <div class="highlight">
+      <p>
+        This paragraph is inside a `div` with the `highlight` class. It has a
+        yellow background and blue text (due to selector priority/specificity).
+        It also contains an inline `span` that is underlined:
+        <span>Inline Span Text</span>.
+      </p>
+    </div>
+
+    <h2>More Examples:</h2>
+
+    <ul>
+      <li class="highlight" data-type="example">
+        This list item has a class and an attribute selector applied.
+      </li>
+      <li data-type="example">
+        This item only has the attribute selector applied (italic text).
+      </li>
+      <li>This is a normal list item.</li>
+    </ul>
+  </body>
+</html>
